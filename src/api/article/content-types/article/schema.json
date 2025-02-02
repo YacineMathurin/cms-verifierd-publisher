@@ -4,7 +4,8 @@
   "info": {
     "singularName": "article",
     "pluralName": "articles",
-    "displayName": "article"
+    "displayName": "article",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,14 +19,28 @@
       "type": "text"
     },
     "apercu": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "prix": {
+      "type": "integer"
+    },
+    "zone": {
+      "type": "enumeration",
+      "enum": [
+        "Aeroport",
+        "Dar-es-salaam",
+        "Karadje",
+        "Niamey-2000",
+        "Plateau"
+      ]
     }
   }
 }
