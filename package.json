@@ -11,14 +11,15 @@
     "deploy": "strapi deploy"
   },
   "dependencies": {
-    "@strapi/plugin-graphql": "^4.25.3",
-    "@strapi/plugin-i18n": "4.25.3",
-    "@strapi/plugin-users-permissions": "4.25.3",
-    "@strapi/strapi": "4.25.3",
+    "@strapi/plugin-graphql": "^5.9.0",
+    "@strapi/plugin-i18n": "^4.25.13",
+    "@strapi/plugin-users-permissions": "^4.25.20",
+    "@strapi/strapi": "^4.25.20",
     "better-sqlite3": "8.6.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "5.3.4",
+    "strapi-plugin-preview-button": "^2.2.2",
     "styled-components": "5.3.3"
   },
   "author": {
