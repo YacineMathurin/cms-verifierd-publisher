@@ -8,15 +8,9 @@ export default () => ({
         contentTypes: [
           {
             uid: "api::article.article",
-            // draft: {
-            //   url: 'http://localhost:3000/api/preview',
-            //   query: {
-            //     type: 'page',
-            //   },
-            //   openTarget: 'StrapiPreviewPage',
-            // },
+           
             published: {
-              url: 'http://localhost:3000/',
+              url: 'http://localhost:3000/generate-pdf?title={titre}&content={description}',  
               openTarget: 'StrapiPage',
             },
           },
