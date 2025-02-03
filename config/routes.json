@@ -1,0 +1,9 @@
+{
+    "method": "GET",
+    "path": "/articles/:id/generate-pdf",
+    "handler": "article.generatePDF",
+    "config": {
+      "policies": []
+    }
+  }
+  
