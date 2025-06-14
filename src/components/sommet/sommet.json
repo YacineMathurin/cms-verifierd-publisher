@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sommet_sommets",
+  "info": {
+    "displayName": "Sommet",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Sommet": {
+      "type": "string"
+    },
+    "Latitude": {
+      "type": "string"
+    },
+    "Longitude": {
+      "type": "string"
+    }
+  }
+}

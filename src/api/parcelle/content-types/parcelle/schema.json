@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "parcelles",
+  "info": {
+    "singularName": "parcelle",
+    "pluralName": "parcelles",
+    "displayName": "parcelle",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Ilot": {
+      "type": "string",
+      "required": true
+    },
+    "Parcelle": {
+      "type": "string",
+      "required": true
+    },
+    "Documents": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Nom": {
+      "type": "string",
+      "required": true
+    },
+    "Prenom": {
+      "type": "string",
+      "required": true
+    },
+    "Superficie": {
+      "type": "string",
+      "required": true
+    },
+    "Coordonne_GPS": {
+      "displayName": "Sommet",
+      "type": "component",
+      "repeatable": true,
+      "component": "sommet.sommet"
+    },
+    "Agent_GPS": {
+      "type": "string"
+    },
+    "Litige": {
+      "type": "enumeration",
+      "enum": [
+        "Non",
+        "Oui"
+      ],
+      "default": "Non"
+    },
+    "Lotissement": {
+      "type": "enumeration",
+      "enum": [
+        "Lotissement A",
+        "Lotissement B",
+        "Lotissement C",
+        "Lotissement D"
+      ]
+    }
+  }
+}

@@ -362,40 +362,45 @@ export interface AdminUser extends Schema.CollectionType {
   };
 }
 
-export interface ApiArticleArticle extends Schema.CollectionType {
-  collectionName: 'articles';
+export interface ApiParcelleParcelle extends Schema.CollectionType {
+  collectionName: 'parcelles';
   info: {
     description: '';
-    displayName: 'article';
-    pluralName: 'articles';
-    singularName: 'article';
+    displayName: 'parcelle';
+    pluralName: 'parcelles';
+    singularName: 'parcelle';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    apercu: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    Agent_GPS: Attribute.String;
+    Coordonne_GPS: Attribute.Component<'sommet.sommet', true>;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
-      'api::article.article',
+      'api::parcelle.parcelle',
       'oneToOne',
       'admin::user'
     > &
       Attribute.Private;
-    description: Attribute.Text;
-    prix: Attribute.Integer;
+    Documents: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    Ilot: Attribute.String & Attribute.Required;
+    Litige: Attribute.Enumeration<['Non', 'Oui']> & Attribute.DefaultTo<'Non'>;
+    Lotissement: Attribute.Enumeration<
+      ['Lotissement A', 'Lotissement B', 'Lotissement C', 'Lotissement D']
+    >;
+    Nom: Attribute.String & Attribute.Required;
+    Parcelle: Attribute.String & Attribute.Required;
+    Prenom: Attribute.String & Attribute.Required;
     publishedAt: Attribute.DateTime;
-    titre: Attribute.String;
+    Superficie: Attribute.String & Attribute.Required;
     updatedAt: Attribute.DateTime;
     updatedBy: Attribute.Relation<
-      'api::article.article',
+      'api::parcelle.parcelle',
       'oneToOne',
       'admin::user'
     > &
       Attribute.Private;
-    zone: Attribute.Enumeration<
-      ['Aeroport', 'Dar-es-salaam', 'Karadje', 'Niamey-2000', 'Plateau']
-    >;
   };
 }
 
@@ -835,7 +840,7 @@ declare module '@strapi/types' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
-      'api::article.article': ApiArticleArticle;
+      'api::parcelle.parcelle': ApiParcelleParcelle;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;
