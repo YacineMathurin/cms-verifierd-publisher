@@ -33,24 +33,21 @@
     },
     "Nom": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "Prenom": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "Superficie": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "Coordonne_GPS": {
       "displayName": "Sommet",
       "type": "component",
       "repeatable": true,
       "component": "sommet.sommet"
-    },
-    "Agent_GPS": {
-      "type": "string"
     },
     "Litige": {
       "type": "enumeration",
@@ -68,6 +65,11 @@
         "Lotissement C",
         "Lotissement D"
       ]
+    },
+    "Id_Parcelle": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }

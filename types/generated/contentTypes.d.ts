@@ -374,7 +374,6 @@ export interface ApiParcelleParcelle extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    Agent_GPS: Attribute.String;
     Coordonne_GPS: Attribute.Component<'sommet.sommet', true>;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -384,16 +383,17 @@ export interface ApiParcelleParcelle extends Schema.CollectionType {
     > &
       Attribute.Private;
     Documents: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    Id_Parcelle: Attribute.String & Attribute.Required & Attribute.Unique;
     Ilot: Attribute.String & Attribute.Required;
     Litige: Attribute.Enumeration<['Non', 'Oui']> & Attribute.DefaultTo<'Non'>;
     Lotissement: Attribute.Enumeration<
       ['Lotissement A', 'Lotissement B', 'Lotissement C', 'Lotissement D']
     >;
-    Nom: Attribute.String & Attribute.Required;
+    Nom: Attribute.String;
     Parcelle: Attribute.String & Attribute.Required;
-    Prenom: Attribute.String & Attribute.Required;
+    Prenom: Attribute.String;
     publishedAt: Attribute.DateTime;
-    Superficie: Attribute.String & Attribute.Required;
+    Superficie: Attribute.String;
     updatedAt: Attribute.DateTime;
     updatedBy: Attribute.Relation<
       'api::parcelle.parcelle',
