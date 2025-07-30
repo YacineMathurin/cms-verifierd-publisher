@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "patients",
+  "info": {
+    "singularName": "patient",
+    "pluralName": "patients",
+    "displayName": "Patient",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "Prenom": {
+      "type": "string"
+    },
+    "DateNaissance": {
+      "type": "date"
+    },
+    "Poids": {
+      "type": "integer"
+    },
+    "Taille": {
+      "type": "integer"
+    },
+    "IMC": {
+      "type": "decimal"
+    },
+    "AntecedantFamilliaux": {
+      "displayName": "AntecedantFamilliaux",
+      "type": "component",
+      "repeatable": false,
+      "component": "antecedant-familliaux.antecedant-familliaux"
+    },
+    "AntecedantMedicaux": {
+      "displayName": "AntecedantMedicaux",
+      "type": "component",
+      "repeatable": false,
+      "component": "antecedant-medicaux.antecedant-medicaux"
+    },
+    "Vaccinations": {
+      "displayName": "Vaccinations",
+      "type": "component",
+      "repeatable": false,
+      "component": "vaccinations.vaccinations"
+    },
+    "Traitement": {
+      "displayName": "Traitement",
+      "type": "component",
+      "repeatable": false,
+      "component": "traitement.traitement"
+    },
+    "NoteConsultation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "vaccinations.vaccinations"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_ligne_traitement_ligne_traitements",
+  "info": {
+    "displayName": "LigneTraitement",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Produit": {
+      "type": "string"
+    },
+    "Dose": {
+      "type": "integer"
+    },
+    "Frequence": {
+      "type": "integer"
+    },
+    "DateDebut": {
+      "type": "date"
+    },
+    "DateFin": {
+      "type": "integer"
+    },
+    "Note": {
+      "type": "text"
+    }
+  }
+}

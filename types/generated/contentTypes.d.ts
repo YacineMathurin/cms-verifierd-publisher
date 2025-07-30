@@ -399,6 +399,47 @@ export interface ApiArticleArticle extends Schema.CollectionType {
   };
 }
 
+export interface ApiPatientPatient extends Schema.CollectionType {
+  collectionName: 'patients';
+  info: {
+    description: '';
+    displayName: 'Patient';
+    pluralName: 'patients';
+    singularName: 'patient';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    AntecedantFamilliaux: Attribute.Component<'antecedant-familliaux.antecedant-familliaux'>;
+    AntecedantMedicaux: Attribute.Component<'antecedant-medicaux.antecedant-medicaux'>;
+    createdAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::patient.patient',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    DateNaissance: Attribute.Date;
+    IMC: Attribute.Decimal;
+    Nom: Attribute.String;
+    NoteConsultation: Attribute.Component<'vaccinations.vaccinations'>;
+    Poids: Attribute.Integer;
+    Prenom: Attribute.String;
+    publishedAt: Attribute.DateTime;
+    Taille: Attribute.Integer;
+    Traitement: Attribute.Component<'traitement.traitement'>;
+    updatedAt: Attribute.DateTime;
+    updatedBy: Attribute.Relation<
+      'api::patient.patient',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    Vaccinations: Attribute.Component<'vaccinations.vaccinations'>;
+  };
+}
+
 export interface PluginContentReleasesRelease extends Schema.CollectionType {
   collectionName: 'strapi_releases';
   info: {
@@ -836,6 +877,7 @@ declare module '@strapi/types' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::article.article': ApiArticleArticle;
+      'api::patient.patient': ApiPatientPatient;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_traitement_traitements",
+  "info": {
+    "displayName": "Traitement"
+  },
+  "options": {},
+  "attributes": {
+    "LigneTraitement": {
+      "displayName": "LigneTraitement",
+      "type": "component",
+      "repeatable": true,
+      "component": "ligne-traitement.ligne-traitement"
+    }
+  }
+}

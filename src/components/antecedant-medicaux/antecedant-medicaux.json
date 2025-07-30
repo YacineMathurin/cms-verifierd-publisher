@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_antecedant_medicaux",
+  "info": {
+    "displayName": "AntecedantMedicaux"
+  },
+  "options": {},
+  "attributes": {
+    "LigneAntecedantMedicaux": {
+      "displayName": "LigneAntecedantMedicaux",
+      "type": "component",
+      "repeatable": true,
+      "component": "ligne-antecedant-medicaux.ligne-antecedant-medicaux"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_antecedant_familliaux",
+  "info": {
+    "displayName": "AntecedantFamilliaux"
+  },
+  "options": {},
+  "attributes": {
+    "Ligne": {
+      "displayName": "LigneAntecedantFamilliaux",
+      "type": "component",
+      "repeatable": true,
+      "component": "ligne-antecedant-familliaux.ligne-antecedant-familliaux"
+    }
+  }
+}

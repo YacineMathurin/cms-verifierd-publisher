@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_vaccinations_vaccinations",
+  "info": {
+    "displayName": "Vaccinations",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "LigneConsultation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ligne-antecedant-medicaux.ligne-antecedant-medicaux"
+    }
+  }
+}

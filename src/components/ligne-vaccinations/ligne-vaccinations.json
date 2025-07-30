@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_ligne_vaccinations_ligne_vaccinations",
+  "info": {
+    "displayName": "LigneVaccinations"
+  },
+  "options": {},
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    }
+  }
+}

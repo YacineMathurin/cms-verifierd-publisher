@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_ligne_antecedant_medicaux_ligne_antecedant_medicauxes",
+  "info": {
+    "displayName": "LigneAntecedantMedicaux"
+  },
+  "options": {},
+  "attributes": {
+    "Type": {
+      "type": "string"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "Note": {
+      "type": "text"
+    }
+  }
+}
