@@ -24,18 +24,11 @@
     "Note": {
       "type": "text"
     },
-    "editedBy": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user",
-      "targetAttribute": null
-    },
     "editedAt": {
-      "type": "datetime"
+      "type": "date"
     },
-    "version": {
-      "type": "integer",
-      "default": 1
+    "Agent": {
+      "type": "string"
     }
   }
 }

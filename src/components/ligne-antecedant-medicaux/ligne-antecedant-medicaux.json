@@ -1,7 +1,8 @@
 {
   "collectionName": "components_ligne_antecedant_medicaux",
   "info": {
-    "displayName": "LigneAntecedantMedicaux"
+    "displayName": "LigneAntecedantMedicaux",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -14,18 +15,11 @@
     "Note": {
       "type": "text"
     },
-    "editedBy": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user",
-      "targetAttribute": null
-    },
     "editedAt": {
-      "type": "datetime"
+      "type": "date"
     },
-    "version": {
-      "type": "integer",
-      "default": 1
+    "Agent": {
+      "type": "string"
     }
   }
 }

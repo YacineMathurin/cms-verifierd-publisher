@@ -71,14 +71,14 @@ export interface LigneAntecedantFamilliauxLigneAntecedantFamilliaux
   extends Schema.Component {
   collectionName: 'components_ligne_antecedant_familliaux';
   info: {
+    description: '';
     displayName: 'LigneAntecedantFamilliaux';
   };
   attributes: {
-    editedAt: Attribute.DateTime;
-    editedBy: Attribute.Text;
+    Agent: Attribute.String;
+    editedAt: Attribute.Date;
     Note: Attribute.Text;
     Parent: Attribute.String;
-    version: Attribute.Integer & Attribute.DefaultTo<1>;
   };
 }
 
@@ -86,19 +86,15 @@ export interface LigneAntecedantMedicauxLigneAntecedantMedicaux
   extends Schema.Component {
   collectionName: 'components_ligne_antecedant_medicaux';
   info: {
+    description: '';
     displayName: 'LigneAntecedantMedicaux';
   };
   attributes: {
+    Agent: Attribute.String;
     Date: Attribute.Date;
-    editedAt: Attribute.DateTime;
-    editedBy: Attribute.Relation<
-      'ligne-antecedant-medicaux.ligne-antecedant-medicaux',
-      'oneToOne',
-      'plugin::users-permissions.user'
-    >;
+    editedAt: Attribute.Date;
     Note: Attribute.Text;
     Type: Attribute.String;
-    version: Attribute.Integer & Attribute.DefaultTo<1>;
   };
 }
 
@@ -124,19 +120,14 @@ export interface LigneTraitementLigneTraitement extends Schema.Component {
     displayName: 'LigneTraitement';
   };
   attributes: {
+    Agent: Attribute.String;
     DateDebut: Attribute.Date;
     DateFin: Attribute.Integer;
     Dose: Attribute.Integer;
-    editedAt: Attribute.DateTime;
-    editedBy: Attribute.Relation<
-      'ligne-traitement.ligne-traitement',
-      'oneToOne',
-      'plugin::users-permissions.user'
-    >;
+    editedAt: Attribute.Date;
     Frequence: Attribute.Integer;
     Note: Attribute.Text;
     Produit: Attribute.String;
-    version: Attribute.Integer & Attribute.DefaultTo<1>;
   };
 }
 

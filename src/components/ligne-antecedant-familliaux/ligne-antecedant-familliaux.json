@@ -1,7 +1,8 @@
 {
   "collectionName": "components_ligne_antecedant_familliaux",
   "info": {
-    "displayName": "LigneAntecedantFamilliaux"
+    "displayName": "LigneAntecedantFamilliaux",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,15 +12,11 @@
     "Note": {
       "type": "text"
     },
-    "editedBy": {
-      "type": "text"
-    },
     "editedAt": {
-      "type": "datetime"
+      "type": "date"
     },
-    "version": {
-      "type": "integer",
-      "default": 1
+    "Agent": {
+      "type": "string"
     }
   }
 }
