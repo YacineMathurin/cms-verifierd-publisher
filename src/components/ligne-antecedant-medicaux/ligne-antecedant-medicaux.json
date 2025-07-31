@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_ligne_antecedant_medicaux_ligne_antecedant_medicauxes",
+  "collectionName": "components_ligne_antecedant_medicaux",
   "info": {
     "displayName": "LigneAntecedantMedicaux"
   },
@@ -13,6 +13,19 @@
     },
     "Note": {
       "type": "text"
+    },
+    "editedBy": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "targetAttribute": null
+    },
+    "editedAt": {
+      "type": "datetime"
+    },
+    "version": {
+      "type": "integer",
+      "default": 1
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_ligne_vaccinations_ligne_vaccinations",
+  "collectionName": "components_ligne_vaccinations",
   "info": {
     "displayName": "LigneVaccinations"
   },
@@ -7,6 +7,19 @@
   "attributes": {
     "Titre": {
       "type": "string"
+    },
+    "editedBy": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "targetAttribute": null
+    },
+    "editedAt": {
+      "type": "datetime"
+    },
+    "version": {
+      "type": "integer",
+      "default": 1
     }
   }
 }

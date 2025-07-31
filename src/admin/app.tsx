@@ -1,6 +1,6 @@
 export default {
   config: {
-    locales: ["ar", "fr"],
+    locales: ["fr"],
     // Disable video tutorials
     tutorials: false,
     // Disable notifications about new Strapi releases

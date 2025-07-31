@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_ligne_traitement_ligne_traitements",
+  "collectionName": "components_ligne_traitement",
   "info": {
     "displayName": "LigneTraitement",
     "description": ""
@@ -23,6 +23,19 @@
     },
     "Note": {
       "type": "text"
+    },
+    "editedBy": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "targetAttribute": null
+    },
+    "editedAt": {
+      "type": "datetime"
+    },
+    "version": {
+      "type": "integer",
+      "default": 1
     }
   }
 }

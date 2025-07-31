@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_hospitalisation_hospitalisations",
+  "info": {
+    "displayName": "Hospitalisation",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Hopital": {
+      "type": "string"
+    },
+    "DateEntre": {
+      "type": "date"
+    },
+    "DateSortie": {
+      "type": "date"
+    },
+    "Jour": {
+      "displayName": "Jour",
+      "type": "component",
+      "repeatable": true,
+      "component": "jour.jour"
+    }
+  }
+}

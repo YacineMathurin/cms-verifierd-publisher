@@ -421,6 +421,9 @@ export interface ApiPatientPatient extends Schema.CollectionType {
     > &
       Attribute.Private;
     DateNaissance: Attribute.Date;
+    Hospitalisations: Attribute.DynamicZone<
+      ['hospitalisation.hospitalisation']
+    >;
     IMC: Attribute.Decimal;
     Nom: Attribute.String;
     NoteConsultation: Attribute.Component<'vaccinations.vaccinations'>;

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_ligne_hospitalisation_ligne_hospitalisations",
+  "info": {
+    "displayName": "Soin",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Type": {
+      "type": "string"
+    },
+    "Heure": {
+      "type": "time"
+    },
+    "Agent": {
+      "type": "string"
+    }
+  }
+}

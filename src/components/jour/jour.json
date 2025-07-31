@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_jour_jours",
+  "info": {
+    "displayName": "Jour",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Ligne": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ligne-hospitalisation.ligne-hospitalisation"
+    },
+    "Date": {
+      "type": "date"
+    }
+  }
+}
