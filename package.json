@@ -15,11 +15,15 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@strapi/design-system": "^1.19.0",
+    "@strapi/icons": "^1.19.0",
     "@strapi/plugin-graphql": "^5.9.0",
     "@strapi/plugin-i18n": "^4.25.13",
     "@strapi/plugin-users-permissions": "^4.25.20",
     "@strapi/strapi": "^4.25.20",
+    "ajv": "^8.17.1",
     "better-sqlite3": "8.6.0",
+    "caniuse-lite": "^1.0.30001731",
     "pg": "^8.8.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",

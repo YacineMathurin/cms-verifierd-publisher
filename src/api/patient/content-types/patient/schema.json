@@ -36,18 +36,6 @@
       "repeatable": false,
       "component": "antecedant-familliaux.antecedant-familliaux"
     },
-    "AntecedantMedicaux": {
-      "displayName": "AntecedantMedicaux",
-      "type": "component",
-      "repeatable": false,
-      "component": "antecedant-medicaux.antecedant-medicaux"
-    },
-    "Vaccinations": {
-      "displayName": "Vaccinations",
-      "type": "component",
-      "repeatable": false,
-      "component": "vaccinations.vaccinations"
-    },
     "Traitement": {
       "displayName": "Traitement",
       "type": "component",
@@ -64,6 +52,16 @@
       "components": [
         "hospitalisation.hospitalisation"
       ]
+    },
+    "AntMedicaux": {
+      "type": "component",
+      "repeatable": false,
+      "component": "antecedant-medicaux.antecedant-medicaux"
+    },
+    "Vaccination": {
+      "type": "component",
+      "repeatable": false,
+      "component": "vaccinations.vaccinations"
     }
   }
 }

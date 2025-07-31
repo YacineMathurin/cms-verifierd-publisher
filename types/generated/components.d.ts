@@ -63,6 +63,7 @@ export interface JourJour extends Schema.Component {
       'ligne-hospitalisation.ligne-hospitalisation',
       true
     >;
+    ObservationJournee: Attribute.String;
   };
 }
 
@@ -111,6 +112,7 @@ export interface LigneHospitalisationLigneHospitalisation
   attributes: {
     Agent: Attribute.String;
     Heure: Attribute.Time;
+    Observation: Attribute.Text;
     Type: Attribute.String;
   };
 }

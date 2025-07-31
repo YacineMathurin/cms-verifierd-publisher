@@ -412,7 +412,7 @@ export interface ApiPatientPatient extends Schema.CollectionType {
   };
   attributes: {
     AntecedantFamilliaux: Attribute.Component<'antecedant-familliaux.antecedant-familliaux'>;
-    AntecedantMedicaux: Attribute.Component<'antecedant-medicaux.antecedant-medicaux'>;
+    AntMedicaux: Attribute.Component<'antecedant-medicaux.antecedant-medicaux'>;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::patient.patient',
@@ -439,7 +439,7 @@ export interface ApiPatientPatient extends Schema.CollectionType {
       'admin::user'
     > &
       Attribute.Private;
-    Vaccinations: Attribute.Component<'vaccinations.vaccinations'>;
+    Vaccination: Attribute.Component<'vaccinations.vaccinations'>;
   };
 }
 
