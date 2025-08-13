@@ -1,12 +1,24 @@
+import "./extensions/styles.css";
 export default {
   config: {
     locales: ["fr"],
-    // Disable video tutorials
     tutorials: false,
-    // Disable notifications about new Strapi releases
     notifications: { releases: false },
   },
+
   bootstrap(app) {
     console.log(app);
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const replaceText = () => {
+        const element = document.querySelector(".sc-dkPtRN.lfKhOZ");
+        if (element) {
+          element.textContent = "Welcome on Medicare!";
+        }
+      };
+
+      // Try immediately and with a delay
+      setTimeout(replaceText, 1000);
+    });
   },
 };

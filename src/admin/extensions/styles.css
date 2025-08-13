@@ -1,0 +1,34 @@
+/* Hide original text and replace with custom text */
+.sc-dkPtRN.kpTGBY {
+  font-size: 0 !important; /* Hide original text */
+  position: relative;
+}
+
+.sc-dkPtRN.kpTGBY::after {
+  content: "Bienvenue Docteur !";
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.25;
+  color: rgb(50, 50, 77);
+}
+
+/* Hide original text and replace with custom text */
+.sc-dkPtRN.lfKhOZ {
+  font-size: 0 !important; /* Hide original text */
+  position: relative;
+}
+
+.sc-dkPtRN.lfKhOZ::after {
+  content: "Connectez-vous à votre compte MediCare Niger";
+  font-size: 1rem;
+}
+
+/* Hide overview */
+.sc-bdvvtL.sc-gsDKAQ.fxBKDQ.eczezx {
+  display: none;
+}
+
+/* Hide Single ContentType */
+.sc-bdvvtL.sc-gsDKAQ.bOQZK.cyxgkm li:nth-child(2) {
+    display: none;
+}
