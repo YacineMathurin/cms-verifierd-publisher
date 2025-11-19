@@ -22,6 +22,10 @@
   content: "Connectez-vous à votre compte MediCare Niger";
   font-size: 1rem;
 }
+.sc-bdvvtL.eURKmX > .sc-dkPtRN.lfKhOZ::after {
+  content: "Veuillez créer et/ou remplir le dossier patient";
+  font-size: 1rem;
+}
 
 /* Hide overview */
 .sc-bdvvtL.sc-gsDKAQ.fxBKDQ.eczezx {

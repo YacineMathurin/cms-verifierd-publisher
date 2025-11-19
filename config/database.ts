@@ -1,4 +1,4 @@
-// config/database.js
+// // config/database.js
 // module.exports = ({ env }) => ({
 //   connection: {
 //     client: "postgres",
@@ -118,7 +118,7 @@ export default ({ env }) => {
           __dirname,
           "..",
           "..",
-          env("DATABASE_FILENAME", ".tmp/data.db")
+          env("DATABASE_FILENAME", ".tmp/data-num-carnet.db")
         ),
       },
       useNullAsDefault: true,
